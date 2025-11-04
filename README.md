@@ -170,7 +170,7 @@ Perintah ini akan menyalakan server lokal dan biasanya akan muncul link seperti 
 
 ### 5. Buka aplikasi di browser dan mulai eksplor
 
-Streamlit biasanya langsung membuka aplikasi di browser secara otomatis. Tapi kalau belum, bisa buka manual melalui link yang muncul di terminal. Setelah tampil di browser, bisa langsung isi data pendapatan, pengeluaran, dan rencana keuangan kamu. Sistem akan menampilkan saran dan rekomendasi otomatis berdasarkan metode _Forward Chaining_ dan _Backward Chaining_.
+Streamlit biasanya langsung membuka aplikasi di browser secara otomatis. Tapi kalau belum, bisa buka manual melalui link yang muncul di terminal. Setelah tampil di browser, bisa langsung isi data pendapatan, pengeluaran, dan rencana keuangan. Sistem akan menampilkan saran dan rekomendasi otomatis berdasarkan metode _Forward Chaining_ dan _Backward Chaining_.
 
 ---
 ## 📸 Tampilan Sistem 
