@@ -77,8 +77,53 @@ Digunakan untuk memverifikasi apakah suatu kesimpulan atau rekomendasi benar-ben
 9.	`low_investment_allocation`: Alokasi investasi di bawah ideal
 10.	`low_saving_allocation` atau `low_emergency_allocation`: Alokasi tabungan/dana darurat rendah
 
+``` Aturan dan Fakta
+# Aturan Forward Chaining (Premis → Kesimpulan)
+rules_raw = [
+    # --- LEVEL 1: Kategori Pendapatan dan Pengeluaran ---
+    # Jika pendapatan tinggi dan pengeluaran rendah, sistem menyarankan investasi agresif.
+    ({"high_income", "low_expense"}, "rekomendasi_investasi_agresif"),
+
+    # Jika pendapatan sedang dan pengeluaran tinggi, sistem menyarankan fokus pada tabungan stabil.
+    ({"medium_income", "high_expense"}, "rekomendasi_tabungan_stabil"),
+
+    # Jika pendapatan rendah dan pengeluaran sangat tinggi, sistem menyarankan pemangkasan biaya.
+    ({"low_income", "very_high_expense"}, "rekomendasi_pangkas_biaya"),
+
+    # --- LEVEL 2: Analisis Sisa Uang ---
+    # Jika sisa uang besar, sistem menyarankan meningkatkan alokasi investasi/tabungan.
+    ({"large_remaining"}, "saran_tambah_alokasi"),
+
+    # Jika sisa uang sangat kecil, sistem memberi peringatan potensi kekurangan kas.
+    ({"small_remaining"}, "peringatan_sisa_kecil"),
+
+    # --- LEVEL 3: Evaluasi Persentase Alokasi ---
+    # Jika persentase investasi kurang dari batas ideal, sistem menyarankan menambah investasi.
+    ({"low_investment_allocation"}, "saran_tambah_investasi"),
+
+    # Jika persentase tabungan terlalu kecil, sistem menyarankan meningkatkan tabungan.
+    ({"low_saving_allocation"}, "saran_tambah_tabungan"),
+
+    # Jika dana darurat tidak mencukupi, sistem menyarankan menambah alokasi dana darurat.
+    ({"low_emergency_allocation"}, "saran_tambah_dana_darurat"),
+
+    # --- LEVEL 4: Peringatan Tambahan ---
+    # Jika pengeluaran sangat tinggi, sistem memberi peringatan untuk dikurangi.
+    ({"very_high_expense"}, "peringatan_kurangi_pengeluaran"),
+
+    # Jika pengeluaran rendah dengan pendapatan sedang, sistem merekomendasikan rencana keuangan moderat.
+    ({"low_expense", "medium_income"}, "rekomendasi_moderat"),
+]
+```
+
 ---
 ## 📂 Struktur Project
+
+```
+📁 UTS_IS_VS2/
+├── .venv/ # Virtual environment tempat semua dependensi Python tersimpan
+└──  app.py # File utama berisi logika sistem pakar dan tampilan Streamlit
+```
 
 ---
 ## 🧩 Teknologi yang Digunakan
@@ -126,3 +171,18 @@ Perintah ini akan menyalakan server lokal dan biasanya akan muncul link seperti 
 ### 5. Buka aplikasi di browser dan mulai eksplor
 
 Streamlit biasanya langsung membuka aplikasi di browser secara otomatis. Tapi kalau belum, bisa buka manual melalui link yang muncul di terminal. Setelah tampil di browser, bisa langsung isi data pendapatan, pengeluaran, dan rencana keuangan kamu. Sistem akan menampilkan saran dan rekomendasi otomatis berdasarkan metode _Forward Chaining_ dan _Backward Chaining_.
+
+---
+## 📸 Tampilan Sistem 
+
+### 1. Tampilan Awal
+
+<img width="563" height="884" alt="Tampilan Awal" src="https://github.com/user-attachments/assets/2a4a3e3d-b3b6-4dbc-94f3-9f87a45bea79" />
+
+### 2. Input Pendapatan, Pengeluaran, dan Alokasi Dana
+
+<img width="556" height="901" alt="Input Pendapatan, Pengeluaran, dan Alokasi Dana" src="https://github.com/user-attachments/assets/ccadd284-92af-46d5-8a83-0c8738121718" />
+
+### 3. Setup Fakta, Forward Chaining, dan Backward Chaining
+
+<img width="545" height="876" alt="Setup Fakta, Forward, dan Backward Chaining" src="https://github.com/user-attachments/assets/91597955-0120-4986-9515-a66fe2fa71b2" />
