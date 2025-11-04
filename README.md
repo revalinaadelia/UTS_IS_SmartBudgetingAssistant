@@ -92,7 +92,8 @@ Proyek ini dikembangkan menggunakan bahasa pemrograman Python dengan beberapa li
 ## 🚀 Cara Menjalankan Program
 
 Berikut langkah-langkah untuk menjalankan sistem _Smart Budgeting Assistant_:
-**1. Cek apakah Python sudah terinstal**
+
+### 1. Cek apakah Python sudah terinstal
 
 Karena program ini dibuat menggunakan Python, pastikan sudah menginstalnya terlebih dahulu (kami menggunakan Python 3.13.9). Untuk mengeceknya, buka **Command Prompt** atau **Git Bash**, lalu ketik:
 
@@ -100,7 +101,7 @@ Karena program ini dibuat menggunakan Python, pastikan sudah menginstalnya terle
 
 Kalau muncul tulisan seperti `Python 3.13.9`, berarti Python sudah terinstal dan bisa digunakan.
 
-**2. Masuk ke folder proyek lewat terminal**
+### 2. Masuk ke folder proyek lewat terminal
 
 Setelah mendownload, buka terminal dan arahkan ke folder tempat file `app.py` berada. Gunakan perintah berikut:
 
@@ -108,13 +109,13 @@ Setelah mendownload, buka terminal dan arahkan ke folder tempat file `app.py` be
 
 Pastikan sudah berada di dalam folder yang benar sebelum lanjut ke langkah berikutnya.
 
-**3. Instal semua library yang dibutuhkan**
+### 3. Instal semua library yang dibutuhkan
 
 Program ini butuh beberapa library tambahan seperti `streamlit` dan `pandas` dengan menjalankan perintah:
 
 `pip install streamlit pandas`
 
-**4. Jalankan aplikasi lewat Streamlit**
+### 4. Jalankan aplikasi lewat Streamlit
 
 Setelah semua library terpasang, jalankan program utama dengan mengetik:
 
@@ -122,6 +123,6 @@ Setelah semua library terpasang, jalankan program utama dengan mengetik:
 
 Perintah ini akan menyalakan server lokal dan biasanya akan muncul link seperti `http://localhost:8501`.
 
-**5. Buka aplikasi di browser dan mulai eksplor**
+### 5. Buka aplikasi di browser dan mulai eksplor
 
 Streamlit biasanya langsung membuka aplikasi di browser secara otomatis. Tapi kalau belum, bisa buka manual melalui link yang muncul di terminal. Setelah tampil di browser, bisa langsung isi data pendapatan, pengeluaran, dan rencana keuangan kamu. Sistem akan menampilkan saran dan rekomendasi otomatis berdasarkan metode _Forward Chaining_ dan _Backward Chaining_.
