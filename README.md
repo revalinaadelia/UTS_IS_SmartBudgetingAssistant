@@ -121,7 +121,7 @@ rules_raw = [
 
 ```
 📁 UTS_IS_VS2/
-├── .venv/ # Virtual environment tempat semua dependensi Python tersimpan
+├── .venv/  # Virtual environment tempat semua dependensi Python tersimpan
 └──  app.py # File utama berisi logika sistem pakar dan tampilan Streamlit
 ```
 
