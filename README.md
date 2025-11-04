@@ -3,9 +3,14 @@
 # 📃 Identitas Kelompok
 
 - **Nama Kelompok**    : Kelompok NPC
-- **Anggota Kelompok** : 1. Betrand Daffarel (4523210029)
-                         2. Eka Lidya Rahmadini (4523210039)
-                         3. Revalina Adelia (4523210091)
+- **Anggota Kelompok** :
+
+  1. Betrand Daffarel (4523210029)
+
+  2. Eka Lidya Rahmadini (4523210039)
+
+  3. Revalina Adelia (4523210091)
+     
 - **Mata Kuliah**      : Intelligent System (A)
 - **Dosen Pengampu**   : Ninuk Wiliani, S.Si., M.Kom., Phd
 - **Tanggal**          : 29 Oktober 2025
