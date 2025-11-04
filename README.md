@@ -22,7 +22,7 @@
 Proyek ini dibuat:
 1. Menerapkan konsep **Sistem Pakar (_Expert System_)** dalam konteks kehidupan nyata.
 2. Memahami cara kerja **penalaran berbasis aturan (_rule-based reasoning_)** menggunakan **_Forward Chaining_** dan **_Backward Chaining_**.
-3. Melatih kemampuan analisis dalam menyusun **basis pengetahuan (_knowledge base_) yang terdiri dari aturan dan fakta.
+3. Melatih kemampuan analisis dalam menyusun **basis pengetahuan (_knowledge base_)** yang terdiri dari aturan dan fakta.
 4. Mengembangkan aplikasi **interaktif berbasis Streamlit** yang dapat membantu pengguna mengelola keuangan secara cerdas.
 5. Menunjukkan penerapan **Artificial Intelligence sederhana** di bidang finansial pribadi.
 
