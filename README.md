@@ -44,7 +44,7 @@ Sistem ini menggunakan dua metode penalaran utama, yaitu **_Forward Chaining_** 
 
 Digunakan untuk mencari kesimpulan baru berdasarkan fakta-fakta awal yang dimasukkan oleh pengguna. Prosesnya dimulai dari data yang sudah diketahui (seperti pendapatan dan pengeluaran), kemudian sistem mencocokkan fakta tersebut dengan aturan yang ada untuk menghasilkan saran atau rekomendasi otomatis.
    
-3. **_Backward Chaining_ (Penalaran Mundur)**
+2. **_Backward Chaining_ (Penalaran Mundur)**
 
 Digunakan untuk memverifikasi apakah suatu kesimpulan atau rekomendasi benar-benar didukung oleh fakta yang ada. Proses ini dimulai dari "tujuan" yang ingin dibuktikan, lalu sistem menelusuri aturan yang relevan untuk memastikan apakah kesimpulan tersebut dapat dipertanggungjawabkan.
 
